@@ -1,0 +1,63 @@
+**************      Projet Shell **********************
+
+Travail Réalisé par le trinôme : 
+
+Chacun d'entre nous a fait 1/3 des taches 
+
+- Salas AIT OUARET  33% 
+- Zouhir AIT SAADA  33%
+- Adel Oulmou 33%
+
+
+
+Pour le bon fonctionnement de notre programme : 
+
+Première étape : Exécuter ./build.sh
+Deuxième étape : Exécuter la commande suivante     trishell [-R] [-d] [-nsmletpg] rep 
+
+Remarque : Par défaut la commande fera un tri par Nom et Non-récursive et croissant 
+
+Remarque : Si on ne mentionne pas le chemin en exécutant la commande, le Tri se fera a partir du répertoire Courant (c’est à dire ou on a exécuté la commande) 
+
+
+
+En utilisant le Paramètre -R    le tri se fera en Récursivité 
+En utilisant le Paramètre -d    le tri se fera en décroissance 
+
+Remarque : Ce programme trie les entrées d’un répertoire suivant différents critères.
+
+En mentionnant les parametres suivants: 
+
+-n : tri suivant le nom des entrées ;
+-s : tri suivant la taille des entrées ;
+-m : tri suivant la date de dernière modification des entrées ;
+-l : tri suivant le nombre de lignes des entrées ;
+-e : tri suivant l’extension des entrées (caractères se trouvant après le dernier point du nom de l’entrée ;
+-t : tri suivant le type de fichier (ordre : répertoire, fichier, liens, fichier spécial de type bloc, fichier
+spécial de type caractère, tube nommé, socket) ;
+-p : tri suivant le nom du propriétaire de l’entrée ;
+-g : tri suivant le groupe du propriétaire de l’entrée.
+
+
+
+
+
+
+
+Détail des fonctionnalités réalisées : 
+
+- On a ajouté une fonctionnalité qui permet à l'utilisateur d'afficher la documentation de la commande trishell en exécutant la commande      trishell -help 
+- pour afficher la version utilisé dans notre programme exécuter       trishell -verion   
+
+ 
+La syntaxe de notre commande sera : trishell [-R] [-d] [-nsmletpg] rep
+
+Pour mieux vous expliquer le déroulement de notre programme on a différentes options qui sont les suivantes : 
+ 
+- Exécuter la commande trishell sans paramètres fera un tri par défaut qui sera un tri par Nom et Non-récursive à partir du répertoire courant (là où on a exécuté la commande) 
+
+- Exécuter la commande trishell avec plus de 4 paramètres affichera un message d'erreur
+
+- Exécuter la commande trishell avec des doublons dans les paramètres affichera aussi un message d'erreur (par exemple :  trishell -R -R ==> affichera un message d’erreur) 
+
+
